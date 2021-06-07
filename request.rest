@@ -1,0 +1,29 @@
+GET http://localhost:9000
+
+###
+POST http://localhost:9000/add/newChannel
+Content-Type: application/json
+
+{
+    "channelName": "Tomar's"
+}
+
+###
+
+GET http://localhost:9000/get/channelList
+
+### 
+POST http://localhost:9000/add/newMessage?id=60bdfee2e1ba792226f43923
+Content-Type: application/json
+
+{
+    "username": "Prabhattomar12",
+    "image": "",
+    "message": "NEW Message",
+    "timestamp": "timestamp..."
+
+}
+
+
+###
+GET http://localhost:9000/get/conversation?id=60bdfee2e1ba792226f43923
